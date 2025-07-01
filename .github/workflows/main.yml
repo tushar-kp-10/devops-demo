@@ -65,8 +65,6 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - "*/"
 
 jobs:
   build:
@@ -124,3 +122,4 @@ jobs:
           else
             git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
             git push origin main
+          fi
