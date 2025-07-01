@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: devops-demo-service
   namespace: default
+
 spec:
   selector:
     app: devops
